@@ -1,8 +1,8 @@
-# PinkyDocs AI
+# ProfBot AI
 
-PinkyDocs AI is a document question-answering application with a Python CLI and a Streamlit web interface. Upload a PDF or TXT file, paste text, select the documents for a conversation, and ask questions grounded in retrieved passages.
+ProfBot AI is a document question-answering application with a Python CLI and a Streamlit web interface. Upload a PDF or TXT file, paste text, select the documents for a conversation, and ask questions grounded in retrieved passages.
 
-**Your documents. Your answers.**
+**A focused assistant for your documents.**
 
 > This project is an interview-ready demo, not an audited identity or document-security product. Do not upload confidential, sensitive, or regulated content without reviewing the service terms and privacy requirements that apply to your use.
 
@@ -17,7 +17,7 @@ PinkyDocs AI is a document question-answering application with a Python CLI and 
 - Supabase persistence for documents, private original files, chunks, conversations, and messages.
 - Conversation-scoped document selections and recent follow-up context.
 - Atomic, database-backed daily per-user and shared question limits.
-- An original vector mascot, pink product theme, and private-by-default storage.
+- An original midnight-blue and cyan robot mascot, refined dark interface, and private-by-default storage.
 
 ## Project structure
 
@@ -33,7 +33,7 @@ PinkyDocs AI is a document question-answering application with a Python CLI and 
     src/pinkydocs/supabase_service.py Owner-scoped persistence and RPC calls
     src/pinkydocs/storage_service.py Upload validation and indexing
     supabase/migrations/001_initial_schema.sql Database, RLS, storage, quota RPCs
-    assets/pinkydocs_mascot.svg   Original PinkyDocs mascot
+    assets/profbot_mascot.svg     Original ProfBot robot mascot
     sample_documents/company_leave_policy.txt Sample content for evaluation
     tests/                         Offline unit and service tests
 
@@ -240,5 +240,5 @@ The screenshots folder explains how to capture real product screenshots after se
     feat: add shared document extraction and retrieval core
     feat: add grounded Gemini answers and CLI
     feat: add Supabase auth, private storage, and atomic quotas
-    feat: add PinkyDocs Streamlit workspace and mascot
+    feat: rebrand the Streamlit chat as ProfBot AI
     docs: add setup, privacy, and free deployment guide

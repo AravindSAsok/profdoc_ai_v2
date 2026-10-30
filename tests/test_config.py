@@ -5,7 +5,8 @@ import pytest
 from pinkydocs.config import ConfigurationError, load_settings
 
 
-def test_settings_parse_streamlit_secret_strings_and_ignore_placeholders(monkeypatch):
+def test_settings_parse_streamlit_secret_strings_and_ignore_placeholders(monkeypatch, tmp_path):
+    monkeypatch.chdir(tmp_path)
     for key in (
         "GEMINI_API_KEY",
         "GEMINI_MODEL",
@@ -37,7 +38,8 @@ def test_settings_parse_streamlit_secret_strings_and_ignore_placeholders(monkeyp
     assert settings.max_question_chars == 2500
 
 
-def test_missing_streamlit_secrets_object_does_not_crash(monkeypatch):
+def test_missing_streamlit_secrets_object_does_not_crash(monkeypatch, tmp_path):
+    monkeypatch.chdir(tmp_path)
     for key in ("GEMINI_API_KEY", "GEMINI_MODEL", "SUPABASE_URL", "SUPABASE_SERVICE_ROLE_KEY"):
         monkeypatch.delenv(key, raising=False)
 
@@ -53,7 +55,8 @@ def test_missing_streamlit_secrets_object_does_not_crash(monkeypatch):
         settings.validate_cli()
 
 
-def test_invalid_numeric_or_chunk_configuration_fails(monkeypatch):
+def test_invalid_numeric_or_chunk_configuration_fails(monkeypatch, tmp_path):
+    monkeypatch.chdir(tmp_path)
     monkeypatch.delenv("CHUNK_SIZE_CHARS", raising=False)
     monkeypatch.delenv("CHUNK_OVERLAP_CHARS", raising=False)
     with pytest.raises(ConfigurationError, match="integer"):

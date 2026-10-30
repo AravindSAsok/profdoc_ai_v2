@@ -1,4 +1,4 @@
-"""Terminal entry point for PinkyDocs AI; requires no Supabase account."""
+"""Terminal entry point for ProfBot AI; requires no Supabase account."""
 
 from __future__ import annotations
 
@@ -40,7 +40,7 @@ def _load_input(settings):
 
 
 def main() -> int:
-    print("PinkyDocs AI - Document Q&A")
+    print("ProfBot AI - Document Q&A")
     try:
         settings = load_settings()
         settings.validate_cli()

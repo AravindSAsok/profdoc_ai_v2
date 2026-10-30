@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title desc">
+  <title id="title">ProfBot AI</title>
+  <desc id="desc">A friendly midnight-blue AI robot with bright cyan digital eyes.</desc>
+  <defs>
+    <radialGradient id="halo" cx="0" cy="0" r="1" gradientTransform="matrix(0 103 -103 0 120 117)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1A3A68" stop-opacity=".92"/>
+      <stop offset="1" stop-color="#0A1020" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shell" x1="67" x2="174" y1="52" y2="175" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#27466F"/>
+      <stop offset=".48" stop-color="#172B49"/>
+      <stop offset="1" stop-color="#101A2D"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="76" x2="165" y1="83" y2="139" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#091629"/>
+      <stop offset=".5" stop-color="#10233D"/>
+      <stop offset="1" stop-color="#091629"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="90" x2="150" y1="99" y2="132" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B1FAFF"/>
+      <stop offset=".45" stop-color="#53E3F0"/>
+      <stop offset="1" stop-color="#49AFFF"/>
+    </linearGradient>
+    <filter id="shadow" width="1.5" height="1.5" x="-.25" y="-.2" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="7"/>
+      <feOffset dy="8"/>
+      <feComponentTransfer><feFuncA slope=".32" type="linear"/></feComponentTransfer>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <circle cx="120" cy="121" r="112" fill="url(#halo)"/>
+  <path d="M120 48V30" stroke="#5C8DFF" stroke-linecap="round" stroke-width="7"/>
+  <circle cx="120" cy="25" r="10" fill="#53D9E8"/>
+  <circle cx="117" cy="22" r="3" fill="#E8FDFF" opacity=".95"/>
+  <path d="M58 100H43c-7 0-12 6-12 13v27c0 7 5 13 12 13h15m124-53h15c7 0 12 6 12 13v27c0 7-5 13-12 13h-15" fill="#142541" stroke="#41618D" stroke-width="4"/>
+  <path d="M73 169c-17 6-28 18-32 34h158c-4-16-15-28-32-34" fill="#12213A" stroke="#294466" stroke-width="4"/>
+  <path d="M102 165v14c0 10 8 18 18 18s18-8 18-18v-14" fill="#1A3152" stroke="#42648E" stroke-width="4"/>
+  <g filter="url(#shadow)">
+    <rect x="56" y="48" width="128" height="126" rx="39" fill="url(#shell)" stroke="#42638F" stroke-width="4"/>
+    <path d="M71 66c8-9 18-13 31-13" fill="none" stroke="#83A9E8" stroke-linecap="round" stroke-width="4" opacity=".55"/>
+    <rect x="73" y="80" width="94" height="61" rx="24" fill="url(#panel)" stroke="#35577F" stroke-width="3"/>
+    <path d="M88 100c5-7 12-10 20-8m24 0c8-2 15 1 20 8" fill="none" stroke="#6D9FCB" stroke-linecap="round" stroke-width="2" opacity=".7"/>
+    <ellipse cx="101" cy="111" rx="8" ry="10" fill="url(#cyan)"/>
+    <ellipse cx="139" cy="111" rx="8" ry="10" fill="url(#cyan)"/>
+    <circle cx="103" cy="108" r="2.2" fill="#F1FEFF"/>
+    <circle cx="141" cy="108" r="2.2" fill="#F1FEFF"/>
+    <path d="M111 127c5 4 13 4 18 0" fill="none" stroke="#6FCFE4" stroke-linecap="round" stroke-width="3"/>
+    <circle cx="69" cy="150" r="4" fill="#53D9E8"/>
+    <circle cx="171" cy="150" r="4" fill="#53D9E8"/>
+    <path d="M82 156c12 8 25 12 38 12s26-4 38-12" fill="none" stroke="#29476B" stroke-linecap="round" stroke-width="3"/>
+  </g>
+  <path d="M111 187h18m-9-9v18" stroke="#53D9E8" stroke-linecap="round" stroke-width="3"/>
+  <circle cx="202" cy="63" r="3" fill="#53D9E8" opacity=".8"/>
+  <circle cx="38" cy="73" r="2" fill="#89AAFF" opacity=".8"/>
+</svg>
